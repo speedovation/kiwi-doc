@@ -8,4 +8,4 @@ h2. KineticWing IDE
 KineticWing PHP IDE : we will put all documentation here like IDE manual, Plugins development development.
 
 
-Kineticwing IDE Plugins using PHP repo is seperate and located "Php Flavours":"https://github.com/speedovation/kiwi-php-plugins"
+Kineticwing IDE Plugins using PHP repo is seperate and located "Php Flavours":https://github.com/speedovation/kiwi-php-plugins
