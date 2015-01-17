@@ -1,0 +1,11 @@
+h2. KineticWing IDE
+
+^Doc Version : 1.0^
+^IDE Version : 2.0.6^ 
+^Last Update: 18 Jan 2015^
+
+
+KineticWing PHP IDE : we will put all documentation here like IDE manual, Plugins development development.
+
+
+Kineticwing IDE Plugins using PHP repo is seperate and located "Php Flavours":"https://github.com/speedovation/kiwi-php-plugins"
