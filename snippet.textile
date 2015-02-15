@@ -1,0 +1,76 @@
+h2. Snippet
+
+Strictly Location based 
+
+We will predict maximum stuff from its location like
+Type (Scope) : PHP, CSS or like
+Content type is snippet. 
+No extension or Special name is required. Name is used internally to load content only. So any valid filename would work. You can add any extension you want. Its developers choice.
+Adding .snippet as extension is trend and make sense like class.snippet
+
+It will completes class declaration when tab is press on class word. 
+Also it will appear in Autocompleter list so you don't need to enter whole word you can press enter on that word. It will same as pressing tab on ending of that word.
+
+*Internal Development Info*
+
+For all snippets
+    
+* Snippet will be added to its model like PhpModel will hold all PHP Snippets
+* On Enter snippets will be added from model. Loaded data inside model with role Qt::UserRole + 5
+
+
+h2. Structure (Format) of Snippet
+
+We will use plain files. No known formats like xml or json. Any format confuses the code content like we need to add proper escape rules.
+
+We will follow ini style that is line based. 
+
+This will look like INI and but it is not. It is following same syntax to keep things easy and clean. After [Snippet] tag it won't a valid INI.
+
+h3. Structure info
+
+* Whole info section is optional. 
+* But don't break structure or results would be unpredictable. Leave values blank.
+* You may remove whole section block like Info block and its childs 
+* But just deleting Info tag line and leaving child orphaned will produce error.
+* Tabtrigger and desc would help when user will use code snippet.
+* Default license for code would be Apache2
+* Default author would be "KiWi Contributer"
+* No support to see author and license of loaded snippets in editor. Not required.
+* No Snippet manager yet. Planned.
+
+h2. BLANK TEMPLATE EXAMPLE
+
+[Info]
+tabTrigger=
+desc=
+author=
+license=
+
+;Must Section if missed whole Snippet is useless as there is code in it.
+;If code is missing it would be ignored
+;It should be last line before code starts. So it be first line which say under this code follows. 
+[Snippet]
+;After Snippet it won't be valid INI. You can see why :-).
+;Code starts here. This comment is not required.
+
+;Code ends here. Again comment is not required.
+
+
+h2. WORKING SNIPPET EXAMPLE (comments removed)
+
+[Info]
+tabTrigger=class
+desc=Class Defination
+author=
+license=
+
+[Snippet]
+class Classname{
+    function __constructor()
+    {
+         	
+    }
+}
+
+
