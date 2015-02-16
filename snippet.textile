@@ -29,11 +29,12 @@ This will look like INI and but it is not. It is following same syntax to keep t
 
 h3. Structure info
 
-* Whole info section is optional. 
+* info section is must.
 * But don't break structure or results would be unpredictable. Leave values blank.
 * You may remove whole section block like Info block and its childs 
 * But just deleting Info tag line and leaving child orphaned will produce error.
 * Tabtrigger and desc would help when user will use code snippet.
+* tabTrigger and snippet are mandatory.
 * Default license for code would be Apache2
 * Default author would be "KiWi Contributer"
 * No support to see author and license of loaded snippets in editor. Not required.
