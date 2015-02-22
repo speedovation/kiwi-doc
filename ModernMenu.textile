@@ -1,0 +1,176 @@
+h2. Modern Menu
+
+# Whitespace will be ignored. After any changes KiWi needs restart.
+# JSON must be valid. Use online versions to check and validate
+# Available menus and actions can be added into any order in any toolbar.
+# Create new toolbars and append or insert in current order. 1_, 2_ shows the position of toolbar.
+# Play and Have fun :)
+
+
+h2. Default Layout
+
+bq. {
+        "1_ToolBar" : "actionCut|cut, actionCopy|copy, actionPaste|clipboard, actionZoomIn|searchplus, actionZoomOut|searchminus, actionZoomReset|search, menuFlavours,actionAbout",
+            "2_ToolBar" : "menuNew|fileo, actionOpen|folderopeno, menuSave|save, Seperator, actionSelectAll, Seperator,  actionUndo,actionRedo, Seperator, actionFind, actionFindFiles, actionFindNext, actionFindPrevious, actionReplace,actionFindInCurrent",
+            "3_ToolBar" : "actionNewProject|file, actionOpenProject|folderopen, actionClearAll|eraser, actionClearAllProjects",
+            "4_ToolBar" : "actionDuplicateLineUp|arrowcircleup, actionDuplicateLineDown|arrowcircledown, actionCopyLine, actionCutLine, actionMoveLineUp|arrowcircleoup, actionMoveLineDown|arrowcircleodown",
+            "5_ToolBar" : "actionToggleBookmark|bookmarko, actionNextBookmarkCurrent|bookmark, actionPreviousBookmarkCurrent, actionNextBookmark, actionPreviousBookmark",
+            "6_ToolBar" : "actionExplorer|columns, actionWelcomeScreen|list, actionStatusBar|square, actionShowTab|folder,actionToolbar, actionOutputWindow,actionPreferences"
+        }
+
+
+h2. Available options
+
+#    Space
+#    Seperator
+#    actionHide_project
+#    actionToggle_work
+#    actionPlain
+#    actionCSS
+#    actionHTML
+#    actionJavascript
+#    actionPHP
+#    actionOpen
+#    actionNewProject
+#    actionOpenProject
+#    actionCloseAll
+#    actionCloseOthers
+#    actionCopy
+#    actionCut
+#    actionPaste
+#    actionUndo
+#    actionRedo
+#    actionDuplicate
+#    actionOpenLocation
+#    actionRenameFile
+#    actionDeleteFiles
+#    actionOpenFiles
+#    actionCutFiles
+#    actionCopyFiles
+#    actionPasteFiles
+#    actionNewFile
+#    actionFile
+#    actionWordWrap
+#    actionExit
+#    actionSaveCurrent
+#    actionSaveAll
+#    actionSaveAs
+#    actionSaveAsPDF
+#    actionClearAll
+#    actionClearAllProjects
+#    actionExplorer
+#    actionCloseCurrent
+#    actionSelectAll
+#    actionMinify
+#    actionToggleEditor
+#    actionToggleGuiEditor
+#    actionToggleWebPreview
+#    actionParse
+#    actionFullscreen
+#    actionToolbar
+#    actionAbout
+#    actionSubmitFeedback
+#    actionHelp
+#    actionCssReferences
+#    actionHTMLReferences
+#    actionJavascriptReferences
+#    actionXHTMLReferences
+#    actionPreferences
+#    actionNormalStyle
+#    actionInlineStyle
+#    actionCustomStyle
+#    actionCss21
+#    actionCss3
+#    actionCss1
+#    actionCss2
+#    actionWelcomeScreen
+#    actionFind
+#    actionFindFiles
+#    actionFindNext
+#    actionFindPrevious
+#    actionReplace
+#    actionOutputWindow
+#    actionFindInCurrent
+#    actionLess
+#    actionSQL
+#    actionXML
+#    actionJSON
+#    actionDuplicateLineUp
+#    actionDuplicateLineDown
+#    actionCopyLine
+#    actionCutLine
+#    actionMoveLineUp
+#    actionMoveLineDown
+#    actionUpper
+#    actionLower
+#    actionToggleAllFold
+#    actionOpenAllFold
+#    actionCloseAllFold
+#    actionToggleBookmark
+#    actionNextBookmark
+#    actionPreviousBookmark
+#    actionNextBookmarkCurrent
+#    actionPreviousBookmarkCurrent
+#    actionCloseCurrentFold
+#    actionOpenCurrentFold
+#    actionMergeLines
+#    actionDeleteLine
+#    actionJavascriptMinify
+#    actionTitle
+#    actionSwap
+#    actionIndent
+#    actionUnident
+#    actionMinimap
+#    actionSelectorsPanel
+#    actionPython
+#    actionShowTabs
+#    actionShowTabsSpaces
+#    actionShowLineParagraphSeparators
+#    actionAddSpaceLineParagraphSeparators
+#    actionDistractionFreeMode
+#    actionCopyFilePath
+#    actionOpenFileLocation
+#    actionStatusBar
+#    actionCloseAllProjects
+#    actionToggleComments
+#    actionScss
+#    actionRefresh
+#    actionQSS
+#    actionZoomIn
+#    actionZoomOut
+#    actionZoomReset
+#    actionPrintFile
+#    actionPreviewFile
+#    actionMenuBar
+#    actionSessionManager
+#    actionGoToLine
+#    menuFile
+#    menuNew
+#    menuClose
+#    menuSave
+#    menuRecentFiles
+#    menuPrint
+#    menuProject
+#    menuRecentProjects
+#    menuCloseProject
+#    menuEdit
+#    menuAdvanced
+#    menuLineOperations
+#    menuCaseConversion
+#    menuFold
+#    menuBookmarkNavigation
+#    menuShowWhitespaces
+#    menuFileOperations
+#    menuNewFileAndFolders
+#    menuViews
+#    menuZoom
+#    menuCss
+#    menuFormat
+#    menuCssVersion
+#    menuHelp
+#    menuOnline_References
+#    menuOptions
+#    menuSearch
+#    menuJavaScript
+#    menuExtra
+#    menuFlavours 
