@@ -1,0 +1,31 @@
+h2. Modes Supported
+
+h3. ProjectFilesMode
+
+Easily find and open files in project scope.
+
+h3. WelcomeMode:
+
+It will show all modes and opened files
+
+h3. OpenedFilesMode
+
+It will show Opened Files
+
+h3. LinenumberMode
+
+Jump to Linenumber of current active file
+
+h3. FileMethodsMode
+
+Jump to methods of current active file
+
+h3. HelpMode
+
+Jump to help of desired input
+
+h2. Planned Modes
+
+# DiskFilesMode: Browse files directly like file explorer
+# CommandMode: Like debug commands 
+
