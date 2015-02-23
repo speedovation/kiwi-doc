@@ -1,13 +1,27 @@
 h2. Modern Menu
 
+Modern layout support icons. Icons will be in same folder.
+
+Modern layout contains horizontal toolbars where you can add menus/actions. So toolbar can contain items from  available options. You can further customized that.
+
+You can create many layouts but only one can be active. You have to rename it properly and reload editor i.e. **ModernMenuLayout**
+
+Icon folder contain icons with exactly same name as actions and for menus just append m- in-front of icon. 
+
 # Whitespace will be ignored. After any changes KiWi needs restart.
 # JSON must be valid. Use online versions to check and validate
 # Available menus and actions can be added into any order in any toolbar.
 # Create new toolbars and append or insert in current order. 1_, 2_ shows the position of toolbar.
 # Play and Have fun :)
 
+h2. Definitions
+
+# IconName : Current active theme name
+# Layouts : Contains list of tool bars
+# Options : List for available options
 
 h2. Default Layout
+
 
 bq. {
         "1_ToolBar" : "actionCut|cut, actionCopy|copy, actionPaste|clipboard, actionZoomIn|searchplus, actionZoomOut|searchminus, actionZoomReset|search, menuFlavours,actionAbout",
