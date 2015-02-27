@@ -37,8 +37,6 @@ h2. Available options
 
 #    Space
 #    Seperator
-#    actionHide_project
-#    actionToggle_work
 #    actionPlain
 #    actionCSS
 #    actionHTML
@@ -63,6 +61,7 @@ h2. Available options
 #    actionCopyFiles
 #    actionPasteFiles
 #    actionNewFile
+#    actionFolder
 #    actionFile
 #    actionWordWrap
 #    actionExit
@@ -72,7 +71,7 @@ h2. Available options
 #    actionSaveAsPDF
 #    actionClearAll
 #    actionClearAllProjects
-#    actionExplorer
+#    actionLeftExplorer
 #    actionCloseCurrent
 #    actionSelectAll
 #    actionMinify
@@ -100,7 +99,6 @@ h2. Available options
 #    actionWelcomeScreen
 #    actionFind
 #    actionFindFiles
-#    actionFindNext
 #    actionFindPrevious
 #    actionReplace
 #    actionOutputWindow
@@ -158,6 +156,26 @@ h2. Available options
 #    actionMenuBar
 #    actionSessionManager
 #    actionGoToLine
+#    actionSaveSession
+#    actionHTMLIndenter
+#    actionUnix
+#    actionMac
+#    actionWindows
+#    actionFindNext
+#    actionFindAll
+#    actionReplaceNext
+#    actionReplaceAll
+#    actionReplacePrevious
+#    actionFindInProjects
+#    actionFindInOpenedFiles
+#    actionWhiteTheme
+#    actionRightExplorer
+#    actionPHPSyntaxChecker
+#    actionparsePhp
+#    actionparsePhpProject
+#    actionViewNav
+#    actionHide_project
+#    actionToggle_work
 #    menuFile
 #    menuNew
 #    menuClose
