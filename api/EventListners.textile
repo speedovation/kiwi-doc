@@ -1,0 +1,52 @@
+h2. API signals
+
+Events are trigger by current focused editor. Using other APIs we can get more info about current focused editor.
+
+p. These are signal in Qt terms which is like event notifications in general terms. 
+
+
+Editor Events
+
+|_. Event Listener          |_. Description                |
+|_\2. Editor Events                                        |
+| onTextModified            | Text Modified                |
+| onTextSelectionModified   | Text Selection Modified      |
+| onBeforeSave              | Trigger before saving file   |
+| OnAfterSave               | Trigger after saving file    |
+|_\2. Workspace Events                                        |
+| onTabIndexChange            | Text Modified                |
+
+
+
+
+
+EventListener
+Note that many of these events are triggered by the buffer underlying the view, and thus the method is only called once, with the first view as the parameter.
+
+
+Methods	Return Value	Description
+on_new(view)	None	Called when a new buffer is created.
+on_new_async(view)	None	Called when a new buffer is created. Runs in a separate thread, and does not block the application.
+on_clone(view)	None	Called when a view is cloned from an existing one.
+on_clone_async(view)	None	Called when a view is cloned from an existing one. Runs in a separate thread, and does not block the application.
+on_load(view)	None	Called when the file is finished loading.
+on_load_async(view)	None	Called when the file is finished loading. Runs in a separate thread, and does not block the application.
+on_pre_close(view)	None	Called when a view is about to be closed. The view will still be in the window at this point.
+on_close(view)	None	Called when a view is closed (note, there may still be other views into the same buffer).
+on_pre_save(view)	None	Called just before a view is saved.
+on_pre_save_async(view)	None	Called just before a view is saved. Runs in a separate thread, and does not block the application.
+on_post_save(view)	None	Called after a view has been saved.
+on_post_save_async(view)	None	Called after a view has been saved. Runs in a separate thread, and does not block the application.
+on_modified(view)	None	Called after changes have been made to a view.
+on_modified_async(view)	None	Called after changes have been made to a view. Runs in a separate thread, and does not block the application.
+on_selection_modified(view)	None	Called after the selection has been modified in a view.
+on_selection_modified_async(view)	None	Called after the selection has been modified in a view. Runs in a separate thread, and does not block the application.
+on_activated(view)	None	Called when a view gains input focus.
+on_activated_async(view)	None	Called when a view gains input focus. Runs in a separate thread, and does not block the application.
+on_deactivated(view)	None	Called when a view loses input focus.
+on_deactivated_async(view)	None	Called when a view loses input focus. Runs in a separate thread, and does not block the application.
+on_text_command(view, command_name, args)	(new_command_name, new_args)	Called when a text command is issued. The listener may return a (command, arguments) tuple to rewrite the command, or None to run the command unmodified.
+on_window_command(window, command_name, args)	(new_command_name, new_args)	Called when a window command is issued. The listener may return a (command, arguments) tuple to rewrite the command, or None to run the command unmodified.
+post_text_command(view, command_name, args)	None	Called after a text command has been executed.
+post_window_command(window, command_name, args)	None	Called after a window command has been executed.
+on_query_context(view, key, operator, operand, match_all)	bool or None	Called when determining to trigger a key binding with the given context key. If the plugin knows how to respond to the context, it should return either True of False. If the context is unknown, it should return None. 
